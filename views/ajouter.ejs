@@ -1,0 +1,35 @@
+<%- include("./partials/header",{title:"articles"} )%>
+
+<h1>Ajouter</h1> 
+<form action="">
+    <div>
+      <div>
+        <label for="author">Auteur</label>
+      </div>
+      <div>
+        <input type="text" name="author" id="author" />
+      </div>
+    </div>
+    <div>
+      <div>
+        <label for="title">Title</label>
+      </div>
+      <div>
+        <input type="text" name="title" id="title" />
+      </div>
+    </div>
+    
+    <div>
+      <div>
+        <label for="img">Choisir une image</label>
+      </div>
+      <div>
+        <input type="file" name="img" id="img" />
+      </div>
+    </div>
+  
+    <input type="submit" id="btn-submit" value="Ajouter" />
+  </form>
+<script src="./ajouter.js"></script>
+
+<%- include("./partials/footer")%>

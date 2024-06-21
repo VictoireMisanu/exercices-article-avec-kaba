@@ -1,0 +1,17 @@
+<%- include("./partials/header",{title:"articles"} )%>
+
+<h1>Articles</h1>
+<ul>
+    <% for (let article of articles){ %>
+
+        <li><a href="<%=`/articles/${article.slug}`%>"><%= article.title %></a></li>
+
+    <% } %>
+</ul>
+
+<p>
+    <a href="/ajouter">Ajouter</a>
+
+</p>
+
+<%- include("./partials/footer")%>
